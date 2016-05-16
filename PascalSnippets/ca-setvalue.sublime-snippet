@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+SetValue('${1:field_name}', '${2:value}');
+]]></content>
+	<description>ca-setvalue</description>
+	<tabTrigger>setvalue</tabTrigger>
+	<scope>source.pascal</scope>
+</snippet>

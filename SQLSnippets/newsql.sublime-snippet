@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+SELECT *
+
+FROM ${1:BRDB}.${2:EXPORT_SHIPMENT} AS ${3:SH}
+
+WHERE
+]]></content>
+	<description>ca</description>
+	<tabTrigger>select-from</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>

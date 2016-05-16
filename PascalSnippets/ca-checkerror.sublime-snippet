@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+If MessagesContain('{1:code}:') Then DoAction('{2:PF1}');
+]]></content>
+	<description>ca-hndl-err</description>
+	<tabTrigger>hndlerr</tabTrigger>
+	<scope>source.pascal</scope>
+</snippet>

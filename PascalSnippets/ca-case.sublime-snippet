@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+Case ${1:var} Of
+	${2:case1} : Begin
+		${3:code}
+	End;
+	${4:case2} : Begin
+		${5:code}
+	End;
+End;
+]]></content>
+	<description>ca-case</description>
+	<tabTrigger>case</tabTrigger>
+	<scope>source.pascal</scope>
+</snippet>

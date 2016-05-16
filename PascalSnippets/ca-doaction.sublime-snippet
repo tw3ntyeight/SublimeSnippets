@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+DoAction('${3:PF8}');
+]]></content>
+	<description>ca-doaction</description>
+	<tabTrigger>doaction</tabTrigger>
+	<scope>source.pascal</scope>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+If (FormName <> '${1:name}') Then Begin
+	ShowMessage('${2:message_here}');
+	Exit;
+End;
+]]></content>
+	<description>ca-form</description>
+	<tabTrigger>formname</tabTrigger>
+	<scope>source.pascal</scope>
+</snippet>

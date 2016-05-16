@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+Pos('${1:substr}', ${2:source}) > 0
+]]></content>
+	<description>ca-pos</description>
+	<tabTrigger>pos</tabTrigger>
+	<scope>source.pascal</scope>
+</snippet>

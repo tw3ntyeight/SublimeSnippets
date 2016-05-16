@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+Program ${1:name_001};
+{
+PRODUCT:		${2:AXP}
+FUNCTION:		${3:AXP PROCESS AUTOMATION}
+DEVELOPER:		Carlito Acosta
+DEV.DATE:		${4:08/22/14}
+=============================================================================================================
+History:
+AUTHOR     			DATE     	STATUS
+------------------- -------- ---------------------------------
+Carlito Acosta		${4:04/28/15}	 Initial Rollout
+}
+// ====== VAR BLOCK ====== //
+Var
+${5}
+// ====== MAIN BLOCK ===== //
+Begin
+${6}
+End.
+]]></content>
+	<description>ca main</description>
+	<tabTrigger>new main</tabTrigger>
+	<scope>source.pascal</scope>
+</snippet>
