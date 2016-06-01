@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+SetValue('COMMAND', '${1:Screen_Name}');
+DoAction('PF8');
+If (FormName <> '${1:Screen_Name}') Then Begin
+	ShowMessage('EXITING:' + newLine + newLine + 'Not on ${1:Screen_Name} screen as expected.');
+	Exit;
+End;
+]]></content>
+	<description>ca-jump-to-scrnchck</description>
+	<tabTrigger>jumpto</tabTrigger>
+	<scope>source.pascal</scope>
+</snippet>
