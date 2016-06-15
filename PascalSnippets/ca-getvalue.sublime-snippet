@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-GetValue('${1:field}');
+GetValue('${1:field}')
 ]]></content>
 	<description>ca-getvalue</description>
 	<tabTrigger>getvalue</tabTrigger>
