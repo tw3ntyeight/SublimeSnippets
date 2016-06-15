@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+AssignFile(${1:Input}, ${2:FilePath});
+${3:Reset(${1:Input}) --Remove if file is for writing}
+${4:ReWrite(${1:Input}) --Remove if file is for reading}
+]]></content>
+	<description>ca-assign</description>
+	<tabTrigger>assign</tabTrigger>
+	<scope>source.pascal</scope>
+</snippet>
