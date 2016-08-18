@@ -9,7 +9,7 @@ Case ${1:var} Of
 	End;
 End;
 ]]></content>
-	<description>ca-case</description>
+	<description>case</description>
 	<tabTrigger>case</tabTrigger>
 	<scope>source.pascal</scope>
 </snippet>

@@ -5,7 +5,7 @@ Case ${1:var} Of
 	${4:case2} : ${5:code};
 End;
 ]]></content>
-	<description>ca-simple-case</description>
-	<tabTrigger>case simple</tabTrigger>
+	<description>simple-case</description>
+	<tabTrigger>case-simple</tabTrigger>
 	<scope>source.pascal</scope>
 </snippet>

@@ -4,7 +4,7 @@ Repeat
 	If Not Inputquery('${1:title}','${2:message}', ${3:var}) Then Exit;
 Until ${3:var} = True 
 ]]></content>
-	<description>ca-iquery-persist</description>
+	<description>iquery-persist</description>
 	<tabTrigger>inputquery</tabTrigger>
 	<scope>source.pascal</scope>
 </snippet>

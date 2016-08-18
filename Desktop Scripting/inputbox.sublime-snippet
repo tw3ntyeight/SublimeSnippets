@@ -2,7 +2,7 @@
 	<content><![CDATA[
 InputBox('${1:Title}', '${2:Message}', '${3:Default Answer}');
 ]]></content>
-	<description>ca-inputbox</description>
+	<description>inputbox</description>
 	<tabTrigger>inputbox</tabTrigger>
 	<scope>source.pascal</scope>
 </snippet>

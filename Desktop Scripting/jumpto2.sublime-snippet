@@ -7,7 +7,7 @@ If (FormName <> '${1:Screen_Name}') Then Begin
 	Exit;
 End;
 ]]></content>
-	<description>ca-jump-to-scrnchck</description>
+	<description>jump-to-scrnchck</description>
 	<tabTrigger>jumpto</tabTrigger>
 	<scope>source.pascal</scope>
 </snippet>

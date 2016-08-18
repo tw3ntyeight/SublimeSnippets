@@ -22,7 +22,7 @@ Begin
 ${6}
 End.
 ]]></content>
-	<description>ca main</description>
+	<description>program</description>
 	<tabTrigger>new main</tabTrigger>
 	<scope>source.pascal</scope>
 </snippet>

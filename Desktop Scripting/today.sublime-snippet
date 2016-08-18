@@ -3,7 +3,7 @@
 '''from time import gmtime, strftime
 insert(strftime("%d/%m/%Y", gmtime()))'''
 ]]></content>
-	<description>ca-today</description>
+	<description>today</description>
 	<tabTrigger>today</tabTrigger>
 	<scope>source.pascal</scope>
 </snippet>

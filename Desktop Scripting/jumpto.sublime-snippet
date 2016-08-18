@@ -3,7 +3,7 @@
 SetValue('COMMAND', '${1:Screen}');
 DoAction('PF8');
 ]]></content>
-	<description>ca-jump-to</description>
+	<description>jump-to</description>
 	<tabTrigger>jumpto</tabTrigger>
 	<scope>source.pascal</scope>
 </snippet>

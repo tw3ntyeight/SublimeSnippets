@@ -5,7 +5,7 @@ If (FormName <> '${1:name}') Then Begin
 	Exit;
 End;
 ]]></content>
-	<description>ca-form</description>
+	<description>form</description>
 	<tabTrigger>formname</tabTrigger>
 	<scope>source.pascal</scope>
 </snippet>

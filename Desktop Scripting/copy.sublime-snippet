@@ -2,7 +2,7 @@
 	<content><![CDATA[
 Copy(${1:source}, ${2:count}, ${3:length})
 ]]></content>
-	<description>ca-copy</description>
+	<description>copy</description>
 	<tabTrigger>copy</tabTrigger>
 	<scope>source.pascal</scope>
 </snippet>
