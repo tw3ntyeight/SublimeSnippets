@@ -10,8 +10,10 @@ DEV.DATE:		${4:08/22/14}
 History:
 AUTHOR     			DATE     	STATUS
 ------------------- -------- ---------------------------------
-Carlito Acosta		${4:04/28/15}	 Initial Rollout
+Carlito Acosta		${4:04/28/15} Initial Rollout
 }
+
+
 // ====== VAR BLOCK ====== //
 Var
 ${5}
