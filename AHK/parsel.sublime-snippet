@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+Loop, parse, $SELECTION$1, `n, `r
+{
+	IF A_loopfield is space
+		continue		
+	$2
+}
+]]></content>
+<tabTrigger>parsel</tabTrigger>
+</snippet>
