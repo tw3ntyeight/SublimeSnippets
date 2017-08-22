@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+DATE(TIMESTAMP(CAST(19+INT(${1:EXPORT.ONHAND_HDR.DATE_CREATE} / 
+100000000000000000) AS CHAR(2)) || 
+TRANSLATE('YE-MN-DA HR:UT:SC', 
+DIGITS(${1:EXPORT.ONHAND_HDR.DATE_CREATE}),
+ 'xxYEMNDAxHRUTSC'))
+- INT(MOD(3 - INT(SUBSTR(DIGITS
+(${1:EXPORT.ONHAND_HDR.DATE_CREATE}),9,1)),3)) 
+DAYS
++ INT(MOD(INT(SUBSTR(DIGITS
+(${1:EXPORT.ONHAND_HDR.DATE_CREATE}),16,2)) - 1,25) + 1) 
+HOURS
++ INT(MOD(4 - ((INT(SUBSTR(DIGITS
+(${1:EXPORT.ONHAND_HDR.DATE_CREATE}),16,2)) - 1) / 25),4) * 15) 
+MINUTES) AS "${2:ALIAS}"
+]]></content>
+	<description>ca</description>
+	<tabTrigger>etmsdate</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>

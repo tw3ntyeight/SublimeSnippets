@@ -1,0 +1,54 @@
+<snippet>
+	<content><![CDATA[
+StartTime := A_TickCount   ; start
+
+ElapsedTime := ( A_TickCount - StartTime ) / 1000     ;end
+
+
+
+Var2:=fTime_HHMMSS(ElapsedTime)
+
+MsgBox %Var2%
+
+$1
+
+fTime_HHMMSS( Seconds )
+{
+   ;#IncludeAgain lib_DateTime_GlobalsFct.AHK
+   Global vTime_FormatFixed, vTime_DDHH_Separator
+   fTime_Globals()
+
+   vFormat := A_FormatFloat
+   SetFormat FLOAT, 0.3
+   vSec60 := Mod( Seconds, 60 )
+   vMin60 := Mod( (Floor( Seconds / 60 )), 60)
+   vHrsxx :=      (Floor( Seconds / 3600 ))
+   SetFormat FLOAT, %vFormat%
+
+   If ( vSec60 < 10 )    ; pad with zeros
+      vSec60 = 0%vSec60%
+   If ( vMin60 < 10 )
+      vMin60 = 0%vMin60%
+
+   vTime_HHMMSS = %vHrsxx%:%vMin60%:%vSec60%
+   If ( ! vTime_FormatFixed )
+      If ( vHrsxx = 0 )
+         vTime_HHMMSS = %vMin60%:%vSec60%
+   Return %vTime_HHMMSS%
+}
+
+fTime_Globals()
+{
+   ;#IncludeAgain lib_DateTime_GlobalsDef.AHK
+   Global vTime_FormatFixed, vTime_DDHH_Separator
+
+   If ( vTime_FormatFixed = "" )
+      vTime_FormatFixed = 1
+   If ( vTime_DDHH_Separator = "" )
+      vTime_DDHH_Separator = _
+   Return
+}
+
+]]></content>
+<tabTrigger>swtimer</tabTrigger>
+</snippet>
