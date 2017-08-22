@@ -2,7 +2,7 @@
 	<content><![CDATA[
 LEFT OUTER JOIN ${1:BRDB}.${2:EXPORT_EVENT} AS ${3:ALIAS}
 	ON ${3:ALIAS}.${4:FIELD} = ${5:OTH_ALIAS}.${6:FIELD}
-	AND ${3:ALIAS}.${7:EVENT_CODE} = '${3:ALIAS}'
+	AND ${3:ALIAS}.${7:FIELD} = '${3:ALIAS}'
 ]]></content>
 	<description>ca</description>
 	<tabTrigger>leftouterjoin</tabTrigger>

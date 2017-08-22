@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+SELECT *
+
+FROM ${1:EXPORT}.${2:SHPMNT_HDR} AS ${3:SHP}
+
+WHERE
+]]></content>
+	<description>ca</description>
+	<tabTrigger>selecte_tms-from</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>
