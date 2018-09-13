@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+LEFT OUTER JOIN ${1:EXPORT}.${2:STAT_ITEM} AS ${3:ALIAS}
+	ON ${3:ALIAS}.${4:INVOICE_REF} = ${5:OTH_ALIAS}.${6:INVOICE_REF}
+	AND ${3:ALIAS}.${7:STAT_CODE} = '${3:ALIAS}'
+	AND TRIM(${3:ALIAS}.OBSOLETE_FLAG) = ''
+	AND ${3:ALIAS}.${8:DATE_STAT} = 
+		(SELECT ${9:MIN}(DATE_STAT) FROM EXPORT.STAT_ITEM 
+			WHERE ${4:INVOICE_REF} = ${5:OTH_ALIAS}.${6:INVOICE_REF}
+			AND ${7:STAT_CODE} = '${3:ALIAS}'
+			AND TRIM(OBSOLETE_FLAG) = ''	
+			GROUP BY INVOICE_REF)
+]]></content>
+	<description>ca</description>
+	<tabTrigger>leftjoin_etmsstat_min</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>
